@@ -1,0 +1,73 @@
+.navbar {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 28px;
+  padding: 8px 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.noteinput {
+  padding: 8px 7px;
+  font-size: 14px;
+  color: gray;
+  border: 1px solid gray;
+  border-radius: 3px;
+  outline: none;
+  width: 300px;
+  margin: 30px;
+  margin-right: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 19% 19% 60%;
+  gap: 10px;
+  border: 3px solid transparent;
+}
+
+.leftside {
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.middleside {
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.rightside {
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.btn {
+  padding: 0px 5px;
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.inputdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dltbtn {
+  padding: 4px;
+  border: transparent;
+  border-radius: 4px;
+  font-size: 20px;
+  float: right;
+  margin-right: 10px;
+  margin-top: -30px;
+}
+
+.time {
+  margin-bottom: 40px;
+}
