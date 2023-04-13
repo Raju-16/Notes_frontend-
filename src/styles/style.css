@@ -21,27 +21,47 @@
   margin-right: 0px;
 }
 
+.maincontainer {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .container {
+  max-width: 55%;
   display: grid;
-  grid-template-columns: 19% 19% 60%;
-  gap: 10px;
-  border: 3px solid transparent;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 20px;
+  height: 200px;
+}
+
+.notes {
+  background-color: gainsboro;
+  border-radius: 5px;
 }
 
 .leftside {
-  border: 1px solid rgb(0, 0, 0, 0.1);
+  background-color: rgb(224, 220, 220);
+  width: 20%;
   border-radius: 4px;
   padding: 8px;
+  height: 200px;
+  margin-right: 10px;
 }
 
 .middleside {
-  border: 1px solid rgb(0, 0, 0, 0.1);
+  background-color: rgb(224, 220, 220);
+  width: 20%;
   padding: 8px;
   border-radius: 4px;
+  margin-right: 10px;
+  height: 490px;
 }
 
 .rightside {
-  border: 1px solid rgb(0, 0, 0, 0.1);
+  background-color: rgb(224, 220, 220);
   padding: 8px;
   border-radius: 4px;
 }
@@ -70,4 +90,5 @@
 
 .time {
   margin-bottom: 40px;
+  margin-top: 10px;
 }
