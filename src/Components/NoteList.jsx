@@ -9,10 +9,8 @@ import "../styles/style.css";
 const NoteList = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.data.result);
-  console.log("Data", data);
 
   useEffect(() => {
-    console.log("useeffect rendingring;ajdfsdfjsdf");
     dispatch(getData());
   }, [dispatch]);
 

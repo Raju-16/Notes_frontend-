@@ -5,7 +5,7 @@ import "../styles/style.css";
 import NoteList from "./NoteList";
 import { GrAdd } from "react-icons/gr";
 import { POST_DATA_SUCCESS } from "../Redux/actionType";
-// import toast from "react-hot-toast";
+import toast from "react-hot-toast";
 
 const Note = () => {
   const [text, setText] = useState("");
@@ -13,8 +13,7 @@ const Note = () => {
 
   const handleText = () => {
     if (text === "") {
-      //   toast("Noting in Notes...");
-      alert("Noting in Notes...");
+      toast("Noting in Notes...");
     } else if (text !== "") {
       const payload = {
         text,
@@ -22,8 +21,9 @@ const Note = () => {
       dispatch(postData(payload))
         .then((res) => {
           if (res === POST_DATA_SUCCESS) {
-            console.log("after post success");
+            toast("Note saved");
             dispatch(getData());
+            setText("");
           }
         })
         .catch((err) => {

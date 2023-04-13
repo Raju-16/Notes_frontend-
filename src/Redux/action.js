@@ -15,7 +15,6 @@ export const getData = () => (dispatch) => {
     });
 };
 export const postData = (payload) => (dispatch) => {
-  console.log(payload, "post ppp");
   dispatch({ type: Types.POST_DATA_REQUEST });
   return axios
     .post("http://localhost:5000", payload)
